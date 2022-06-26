@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700&family=Londrina+Outline&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #f6f6f6;
+  font-family: "Catamaran", sans-serif;
+  background-color: #141414;
+}
+
+.btn-primary {
+  color: #00CFBD;
+  border: #00CFBD solid 1px;
+  border-radius: 13px;
+  padding: 1px 20px;
+  font-family: "Londrina Outline", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  color: #C770F0;
+  border: #C770F0 solid 1px;
+  border-radius: 13px;
+  padding: 1px 20px;
+  font-family: "Londrina Outline", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.containerWidth {
+  width: 1080px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5764705882) 1px 1px 5px;
+  background-color: #181A1A;
+  font-size: 20px;
+  padding: 30px;
+  font-weight: bold;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+nav .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+nav .navbar div {
+  color: #00CFBD;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #141414;
+}
+.hero .c-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .c-hero h1 {
+  font-weight: 400;
+  font-size: 28px;
+}
+.hero .c-hero span {
+  font-weight: 500;
+  font-size: 54px;
+  color: #00CFBD;
+}
+
+.btns-contact {
+  display: flex;
+  margin-top: 20px;
+  gap: 60px;
+}/*# sourceMappingURL=style.css.map */

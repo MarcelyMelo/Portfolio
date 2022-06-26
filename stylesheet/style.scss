@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700&family=Londrina+Outline&display=swap');
+
+$clr_primary: #181A1A;
+$clr_secondary:#141414;
+$clr_blue:#00CFBD;
+$clr_violet:#C770F0;
+$clr_white:#f6f6f6;
+$ff_primary: 'Catamaran', sans-serif;
+$ff_secondary: 'Londrina Outline', sans-serif;
+$fs-small: 20px;
+$fs-regular: 28px;
+$fs-big: 54px;
+
+////////////////////////////////////////////////////
+
+@mixin name {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+@mixin btn($btn_color:$clr_white) {
+    color: $btn_color;
+    border: $btn_color solid 1px;
+    border-radius: 13px;
+    padding: 1px 20px;
+    font-family: $ff_secondary;
+    font-size: $fs-regular;
+    text-decoration: none;
+}
+
+////////////////////////////////////////////////////
+
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: $clr_white;
+    font-family: $ff_primary;
+    background-color: $clr_secondary;
+}
+.btn-primary{
+    @include btn($btn_color: $clr_blue);
+}
+.btn-secondary{
+    @include btn($btn_color: $clr_violet);
+}
+.containerWidth{
+    width: 1080px;
+}
+
+////////////////////////////////////////////////////
+
+nav{
+    @include name;
+    margin-bottom: 10px;
+    box-shadow: #00000093 1px 1px 5px;
+    background-color: $clr_primary;
+    font-size: $fs-small;
+    padding: 30px;
+    font-weight: bold;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+        div{
+            color: $clr_blue
+        }
+    }
+}
+
+////////////////////////////////////////////////////
+
+.hero{
+    @include name;
+    background-color: $clr_secondary;
+    .c-hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-weight: 400;
+            font-size: $fs-regular;
+        }
+        span{
+            font-weight: 500;
+            font-size: $fs-big;
+            color: $clr_blue;
+        }
+    }
+}
+.btns-contact{
+    display: flex;
+    margin-top: 20px;
+    gap: 60px;
+}
+
+////////////////////////////////////////////////////
