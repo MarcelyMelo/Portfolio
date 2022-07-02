@@ -181,7 +181,7 @@ nav .navbar .unable {
 }
 .home .home-c .arrow-down {
   color: #FF8086;
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
   -webkit-animation: arrowdown 0.9s infinite;
           animation: arrowdown 0.9s infinite;
   position: relative;
@@ -237,5 +237,8 @@ nav .navbar .unable {
   }
   .home .home-c .home-cc .home-txt p {
     font-size: 2rem;
+  }
+  .home .home-c .arrow-down {
+    padding-bottom: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

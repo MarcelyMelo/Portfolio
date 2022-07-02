@@ -181,7 +181,7 @@ nav{
         }
         .arrow-down{
             color: $clr-pink;
-            padding-bottom: 2rem;
+            padding-bottom: 6rem;
             animation: arrowdown .9s infinite;
             position: relative;
         }
@@ -236,6 +236,9 @@ nav{
                         font-size: 2rem;
                     }
                 }
+            }
+            .arrow-down{
+                padding-bottom: 3rem;
             }
         }
     }
