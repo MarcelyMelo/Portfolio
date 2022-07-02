@@ -61,7 +61,6 @@ nav{
             justify-content: center;
             flex-direction: column;
             gap: 41px;
-
             height: 0;
             overflow-y: hidden;
 
@@ -95,3 +94,37 @@ nav{
         }
     }
 }
+@media screen and (min-width: 800px){
+    nav{
+        display: flex;
+        justify-content: center;
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 80%;
+            .logo{
+                visibility: visible;
+            }
+            .btn-toggle{
+                display: none;
+            }
+            .nav-links{
+                height: auto;
+
+                overflow: visible;
+                justify-content: baseline;
+                flex-direction: row;
+                a{
+                    font-size: 1.25rem;
+                }
+                .nav-icons{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////

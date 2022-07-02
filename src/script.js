@@ -5,5 +5,4 @@ const logo = document.querySelector('.logo')
 btn.addEventListener('click', ()=>{
     links.classList.toggle('show-links')
     logo.classList.toggle('unable')
-
 })

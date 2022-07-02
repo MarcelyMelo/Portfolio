@@ -79,4 +79,35 @@ nav .navbar .show-links {
 }
 nav .navbar .unable {
   visibility: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  nav .navbar .logo {
+    visibility: visible;
+  }
+  nav .navbar .btn-toggle {
+    display: none;
+  }
+  nav .navbar .nav-links {
+    height: auto;
+    overflow: visible;
+    justify-content: baseline;
+    flex-direction: row;
+  }
+  nav .navbar .nav-links a {
+    font-size: 1.25rem;
+  }
+  nav .navbar .nav-links .nav-icons {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
