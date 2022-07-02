@@ -8,8 +8,8 @@
 }
 $clr-white:#F4F0F1;
 $clr-gray:#181A1A;
-$clr-pink:#FF7E7E;
-
+// $clr-pink:#FF7E7E;
+$clr-pink:#FF8086;
 body{
     background-color: $clr-white;
 }
@@ -44,8 +44,8 @@ nav{
                 div{
                     width: 31.5px;
                 background-color: $clr-gray;
-                height: 2px;
-                margin: 9px;
+                height: 0.125rem;
+                margin: 0.563rem;
                 transition: all .5s;
                 }
             }
@@ -60,7 +60,7 @@ nav{
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            gap: 41px;
+            gap: 2.625rem;
             height: 0;
             overflow-y: hidden;
 
@@ -75,19 +75,19 @@ nav{
             a:hover{
                 color: $clr-pink;
             }
-
-            .nav-icons{
-                display: flex;
+            .icons{
                 height: 20vh;
                 overflow-y: hidden;
                 align-items: flex-end;
                 gap: 2rem;
+                display: flex;
             }
+            
 
 
         }
         .show-links{
-            height: 80vh;
+            height: 90vh;
         }
         .unable{
             visibility: hidden;
@@ -119,7 +119,7 @@ nav{
                 a{
                     font-size: 1.25rem;
                 }
-                .nav-icons{
+                .icons{
                     display: none;
                 }
             }
@@ -128,3 +128,119 @@ nav{
 }
 
 ///////////////////////////////////////////////
+
+@keyframes arrowdown{
+    0%{top:0}
+    50%{top:10px}
+    100%{top:0}
+}
+
+.home{
+    padding: 0 1.375rem;
+    .home-c{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        .home-cc{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:2.5rem;
+            .home-img-c{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .home-img{
+                    padding-top: 10%;
+                    max-width: 60%;
+                    img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+                .icons{
+                    display: none;
+                }
+            }
+            .home-txt{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                h1{
+                    font-size: 2rem;
+                    span{
+                        color: $clr-pink;
+                    }
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .arrow-down{
+            color: $clr-pink;
+            padding-bottom: 2rem;
+            animation: arrowdown .9s infinite;
+            position: relative;
+        }
+    }
+}
+@media screen and (min-width: 800px){
+    .home {
+        display: flex;
+        justify-content: center;
+        .home-c {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            .home-cc{
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10rem;
+                width: 70%;
+                .home-img-c{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: .5rem;
+                    .home-img{
+                        padding-top: 0;
+                        max-width: 200px;
+                        min-width: 177px;
+                    }
+                    .icons{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2rem;
+                        a{
+                            font-size: 1.5rem;
+                            color: $clr-gray;
+                            transition: color .5s;
+                        }
+                        a:hover{
+                            color: $clr-pink;
+                        }
+                    }
+                }
+                .home-txt{
+                    min-width: 350px;
+                    h1{
+                        
+                        font-size: 2.5rem;
+                    }
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+
+}
