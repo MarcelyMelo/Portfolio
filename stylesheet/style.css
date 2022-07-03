@@ -7,6 +7,10 @@
   font-weight: 300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F4F0F1;
 }
@@ -90,7 +94,7 @@ nav .navbar .unable {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 60%;
   }
   nav .navbar .logo {
     visibility: visible;
@@ -156,7 +160,7 @@ nav .navbar .unable {
 }
 .home .home-c .home-cc .home-img-c .home-img {
   padding-top: 10%;
-  max-width: 60%;
+  max-width: 270px;
 }
 .home .home-c .home-cc .home-img-c .home-img img {
   width: 100%;
@@ -196,7 +200,7 @@ nav .navbar .unable {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
   }
   .home .home-c .home-cc {
     flex-direction: row;
@@ -240,5 +244,63 @@ nav .navbar .unable {
   }
   .home .home-c .arrow-down {
     padding-bottom: 3rem;
+  }
+}
+.experience {
+  padding: 1.375rem;
+}
+.experience .section-title {
+  font-size: 1.5rem;
+}
+.experience .experience-c {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.experience .experience-c .experience-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.experience .experience-c .experience-card .ex-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.experience .experience-c .experience-card .ex-card h3 {
+  font-size: 1.25rem;
+  color: #FF8086;
+}
+.experience .experience-c .experience-card .ex-card p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .experience {
+    display: flex;
+    justify-content: center;
+  }
+  .experience .experience-c {
+    width: 60%;
+  }
+  .experience .experience-c .section-title {
+    font-size: 1.875rem;
+  }
+  .experience .experience-c .experience-card .ex-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .experience .experience-c .experience-card .ex-card h3 {
+    font-size: 1.5rem;
+    color: #FF8086;
+  }
+  .experience .experience-c .experience-card .ex-card p {
+    font-size: 1.25rem;
+  }
+  .experience .experience-c .experience-card .ex-card .xcard-item1 {
+    max-width: 250px;
+  }
+  .experience .experience-c .experience-card .ex-card .xcard-item2 {
+    max-width: 420px;
   }
 }/*# sourceMappingURL=style.css.map */

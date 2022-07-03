@@ -10,6 +10,9 @@ $clr-white:#F4F0F1;
 $clr-gray:#181A1A;
 // $clr-pink:#FF7E7E;
 $clr-pink:#FF8086;
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: $clr-white;
 }
@@ -103,7 +106,7 @@ nav{
             justify-content: space-between;
             align-items: center;
 
-            width: 80%;
+            width: 60%;
             .logo{
                 visibility: visible;
             }
@@ -154,7 +157,7 @@ nav{
                 align-items: center;
                 .home-img{
                     padding-top: 10%;
-                    max-width: 60%;
+                    max-width: 270px;
                     img{
                         width: 100%;
                         border-radius: 100%;
@@ -195,7 +198,7 @@ nav{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 70%;
+            width: 80%;
             .home-cc{
                 flex-direction: row;
                 align-items: center;
@@ -242,8 +245,71 @@ nav{
             }
         }
     }
-    
+}
 
+///////////////////////////////////////////////
 
+.experience{
+    padding: 01.375rem;
+    .section-title{
+        font-size: 1.5rem;
+    }
+    .experience-c{
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+        .experience-card{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        .ex-card{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            h3{
+                font-size: 1.25rem;
+                color: $clr-pink;
+            }
+            p{
+                font-size: 1rem;
+            }
+            
+        }
+    }
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    .experience {
+        display: flex;
+        justify-content: center;
+        .experience-c {
+            width: 60%;
+            .section-title{
+                font-size: 1.875rem;
+            }
+            .experience-card{
+            .ex-card{
+                flex-direction: row;
+                justify-content: space-between;
+                
+                h3{
+                    font-size: 1.5rem;
+                    color: $clr-pink;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
+                .xcard-item1{
+                    max-width: 250px;
+                }
+                .xcard-item2{
+                    max-width: 420px;
+                }
+            }
+            }
+        }
+    }
 
 }
