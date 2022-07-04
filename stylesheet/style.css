@@ -13,9 +13,6 @@ html {
 
 body {
   background-color: #F4F0F1;
-}
-
-a {
   text-decoration: none;
 }
 
@@ -23,6 +20,16 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #F4F0F1;
+  z-index: 999;
+}
 nav .navbar {
   padding: 0 1.375rem;
 }
@@ -148,6 +155,7 @@ nav .navbar .unable {
   height: 90vh;
 }
 .home .home-c .home-cc {
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,7 +255,7 @@ nav .navbar .unable {
   }
 }
 .experience {
-  padding: 3rem 1.375rem;
+  padding: 5rem 1.375rem;
 }
 .experience .section-title {
   font-size: 1.5rem;

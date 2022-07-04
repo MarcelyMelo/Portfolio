@@ -15,19 +15,23 @@ html{
 }
 body{
     background-color: $clr-white;
-}
-a{
     text-decoration: none;
 }
 ul{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 
 ///////////////////////////////////////////////
 
 nav{
+    position: fixed;
+    width: 100%;
+    background-color: $clr-white;
+    z-index: 999;
     .navbar{
-        
         padding: 0 1.375rem;
         .logo{
             font-size: 1.25rem;
@@ -73,7 +77,6 @@ nav{
                 color:$clr-gray;
                 font-size: 2rem;
                 transition: color .5s;
-
             }
             a:hover{
                 color: $clr-pink;
@@ -147,6 +150,7 @@ nav{
         align-items: center;
         height: 90vh;
         .home-cc{
+            margin-top: 10vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -250,7 +254,7 @@ nav{
 ///////////////////////////////////////////////
 
 .experience{
-    padding: 3rem 1.375rem;
+    padding: 5rem 1.375rem;
     .section-title{
         font-size: 1.5rem;
     }
