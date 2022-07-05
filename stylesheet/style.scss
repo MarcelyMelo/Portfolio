@@ -78,7 +78,7 @@ nav{
                 font-size: 2rem;
                 transition: color .5s;
             }
-            a:hover{
+            a:hover, .icons:hover{
                 color: $clr-pink;
             }
             .icons{
@@ -125,6 +125,7 @@ nav{
                 a{
                     font-size: 1.25rem;
                 }
+                
                 .icons{
                     display: none;
                 }

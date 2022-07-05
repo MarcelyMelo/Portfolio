@@ -75,7 +75,7 @@ nav .navbar .nav-links a {
   font-size: 2rem;
   transition: color 0.5s;
 }
-nav .navbar .nav-links a:hover {
+nav .navbar .nav-links a:hover, nav .navbar .nav-links .icons:hover {
   color: #FF8086;
 }
 nav .navbar .nav-links .icons {
